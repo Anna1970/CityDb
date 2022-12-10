@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CityDb</string>
+
+    <string name="name_country">Type</string>
+    <string name="name_city">Name</string>
+    <string name="id_city">Key</string>
+
+</resources>

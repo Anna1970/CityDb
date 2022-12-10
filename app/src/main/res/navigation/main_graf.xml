@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graf"
+    app:startDestination="@id/cityListFragment">
+
+    <fragment
+        android:id="@+id/cityListFragment"
+        android:name="ru.naa.citydb.ui.CityListFragment"
+        android:label="CityListFragment"
+        tools:layout   = "@layout/fragment_city_list">
+        <action
+            android:id="@+id/action_cityListFragment_to_cityEditFragment"
+            app:destination="@id/cityEditFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cityEditFragment"
+        android:name="ru.naa.citydb.ui.CityEditFragment"
+        android:label="CityEditFragment"
+        tools:layout="@layout/fragment_city_edit">
+        <action
+            android:id="@+id/action_cityEditFragment_to_cityListFragment"
+            app:destination="@id/cityListFragment" />
+        <argument
+            android:name="CITY_ID"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+    </fragment>
+</navigation>

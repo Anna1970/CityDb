@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_iist_city">100</dimen>
+    <dimen name="item_margin_start">16dp</dimen>
+    <dimen name="item_margin_top">16dp</dimen>
+    <dimen name="container_margin">10dp</dimen>
+</resources>
